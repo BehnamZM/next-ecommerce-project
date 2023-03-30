@@ -1,0 +1,16 @@
+.styled_button {
+  width: fit-content;
+  color: white;
+  font-family: "Vazir";
+  padding: 0.5rem 1rem;
+  font-weight: 900;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8),
+    -4px -4px 10px rgba(255, 255, 255, 0.4),
+    inset -4px -4px 10px rgba(0, 0, 0, 0.4),
+    inset 4px 4px 10px rgba(255, 255, 255, 0.4);
+}

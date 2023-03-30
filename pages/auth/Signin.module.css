@@ -1,0 +1,44 @@
+.signin_container {
+  height: 110vh;
+  background-image: url(../../public/images/slide3.png);
+  background-position: -50% -100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signin_inner {
+  position: relative;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8),
+    -4px -4px 10px rgba(255, 255, 255, 0.4),
+    inset -4px -4px 10px rgba(0, 0, 0, 0.4),
+    inset 4px 4px 10px rgba(255, 255, 255, 0.4);
+  padding: 2rem;
+  background-color: #be0347;
+  width: 50%;
+  margin: 0 auto;
+}
+.signin_form {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 668px) {
+  .signin_container {
+    background-position: -0% -100%;
+  }
+  .signin_inner {
+    width: 90%;
+  }
+}
+
+@media (min-width: 669px) and (max-width: 990px) {
+  .signin_inner {
+    width: 60%;
+  }
+}

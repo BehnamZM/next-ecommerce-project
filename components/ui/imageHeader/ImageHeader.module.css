@@ -1,0 +1,41 @@
+.image_header {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+.image_header_inner {
+  width: 100%;
+  height: 100%;
+}
+
+/* .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+.page_infos {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 2;
+}
+.image_header_h4 {
+  font-size: 50px;
+  color: red;
+}
+.image_header_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}

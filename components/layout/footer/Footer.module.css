@@ -1,0 +1,35 @@
+.footer {
+  height: 150px;
+  background-color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer_social_media {
+  display: flex;
+  gap: 1rem;
+  color: white;
+  font-size: 25px;
+}
+
+.footer_social_media > div {
+  cursor: pointer;
+}
+.footer_social_media > div:hover {
+  color: yellow;
+}
+
+.footer_inner .copy_right {
+  color: white;
+  font-size: 10px;
+}

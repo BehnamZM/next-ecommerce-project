@@ -1,0 +1,88 @@
+.menu_container {
+  display: flex;
+  align-items: center;
+  padding: 15rem 0;
+}
+.menu_inner {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.menu_sidebar {
+}
+.filter_items {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+.searchbox {
+  display: flex;
+  height: 35px;
+}
+
+.searchbox_input {
+  border: 1px solid #ffe205;
+  border-radius: 0;
+  outline: none;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  padding: 0 1rem;
+  font-family: "Vazir";
+}
+
+.search_btn {
+  height: 100%;
+  background-color: #ffe205;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+.categories {
+  padding: 0;
+}
+
+.category_item {
+  list-style: none;
+  cursor: pointer;
+  padding: 3px;
+  margin: 0.5rem;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.category_item:hover {
+  color: #ffe205;
+}
+
+.products_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sort_items {
+}
+.radio_container {
+}
+
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (max-width: 668px) {
+  .menu_inner {
+    grid-template-columns: 1fr;
+  }
+
+  .filter_items {
+    align-items: center;
+  }
+}
+@media (min-width: 668px) and (max-width: 990px) {
+}

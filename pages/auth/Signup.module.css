@@ -1,0 +1,45 @@
+.signup_container {
+  height: 160vh;
+  background-image: url(../../public/images/slide2.png);
+  background-size: 50rem;
+  background-position: -50% -100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup_inner {
+  position: relative;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8),
+    -4px -4px 10px rgba(255, 255, 255, 0.4),
+    inset -4px -4px 10px rgba(0, 0, 0, 0.4),
+    inset 4px 4px 10px rgba(255, 255, 255, 0.4);
+  padding: 2rem;
+  background-color: #ffc004;
+  width: 50%;
+  margin: 0 auto;
+}
+.signup_form {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 668px) {
+  .signup_container {
+    background-position: -0% -100%;
+  }
+  .signup_inner {
+    width: 90%;
+  }
+}
+
+@media (min-width: 669px) and (max-width: 990px) {
+  .signup_inner {
+    width: 60%;
+  }
+}
