@@ -1,4 +1,3 @@
-import Input from "@/components/ui/input/Input";
 import styles from "./Menu.module.css";
 import { RiSearch2Line } from "react-icons/ri";
 import Product from "@/components/product/Product";
@@ -7,6 +6,7 @@ import { handleError } from "lib/helper";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { useRouter } from "next/router";
+import StyledLoading from "@/components/ui/styledLoading/StyledLoading";
 
 const Menu = ({ categories, error, products }) => {
   const [searchInput, setSearchInput] = useState("");
@@ -157,7 +157,7 @@ const Menu = ({ categories, error, products }) => {
               {filteredProducts.products.length ? (
                 <>
                   {loading ? (
-                    <div>loading</div>
+                    <StyledLoading />
                   ) : (
                     <div className={styles.product_list}>
                       {filteredProducts &&

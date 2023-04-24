@@ -12,7 +12,7 @@
     inset 4px 4px 10px rgba(255, 255, 255, 0.4);
 }
 
-@media screen and (max-width: 668px) {
+@media (max-width: 668px) {
   .header_icon {
     padding: 0.2rem 1rem;
     font-size: 40px;
@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: 990px) {
+@media (min-width: 669px) and (max-width: 990px) {
   .header_icon {
     font-size: 50px;
   }

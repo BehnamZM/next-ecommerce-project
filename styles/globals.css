@@ -30,6 +30,80 @@ li {
   margin: 0;
 }
 
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* input styles */
+
+.styled_input {
+  border: none;
+  outline: none;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8),
+    -4px -4px 10px rgba(255, 255, 255, 0.4),
+    inset -4px -4px 10px rgba(0, 0, 0, 0.4),
+    inset 4px 4px 10px rgba(255, 255, 255, 0.4);
+  width: 70%;
+  font-family: "Vazir";
+}
+
+@media screen and (max-width: 990px) {
+  .styled_input {
+    width: 100%;
+  }
+}
+
+.error_text {
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* button styles */
+
+.styled_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: fit-content;
+  color: white;
+  font-family: "Vazir";
+  padding: 0.5rem 1rem;
+  font-weight: 900;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8),
+    -4px -4px 10px rgba(255, 255, 255, 0.4),
+    inset -4px -4px 10px rgba(0, 0, 0, 0.4),
+    inset 4px 4px 10px rgba(255, 255, 255, 0.4);
+}
+
+/* table styles */
+
+table {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+
+tbody {
+  padding: 1rem;
+}
+
 .container {
   width: 95%;
   margin: 0 auto;
@@ -182,4 +256,9 @@ li {
   height: 8px;
   border-radius: 50%;
   background: white;
+}
+
+.toman {
+  font-size: 10px;
+  color: red;
 }

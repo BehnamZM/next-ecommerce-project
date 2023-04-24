@@ -16,6 +16,7 @@ import slideOne from "@/public/images/slide1.png";
 import slideTwo from "@/public/images/slide2.png";
 import slideThree from "@/public/images/slide3.png";
 import Button from "@/components/ui/button/Button";
+import Link from "next/link";
 
 const Slider = () => {
   return (
@@ -39,9 +40,11 @@ const Slider = () => {
           <div className={styles.slide_header}>
             <div className={styles.slide_inner}>
               <div className={styles.slide_infos}>
-                <h3>اسلاید اول</h3>
-                <p>توضیحات مربوط به اسلاید اول</p>
-                <Button bgColor="blue">کلیک کنید</Button>
+                <h3>انواع برگر</h3>
+                <p>لذیذترین برگرها را در اینجا امتحان کنید :)</p>
+                <Link href="/menu?category=2">
+                  <Button bgColor="blue">کلیک کنید</Button>
+                </Link>
               </div>
               <div className={styles.slide_img}>
                 <Image

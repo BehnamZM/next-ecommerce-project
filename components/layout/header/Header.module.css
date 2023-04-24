@@ -1,1 +1,32 @@
+.header {
+  position: relative;
+}
 
+.cart_icon {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 15%;
+  right: 5%;
+  font-size: 25px;
+  background-color: #ffdd00;
+  padding: 0.2rem;
+  border-radius: 50%;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.cart_counter {
+  background-color: black;
+  color: white;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  font-size: 10px;
+}

@@ -87,9 +87,23 @@
   object-fit: contain;
 }
 
+.user_name {
+  background-color: #ffe205;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 668px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0;
+  }
   .navbar .list_items {
-    display: none;
+    padding: 0 5px;
   }
   .logo_part {
     width: 150px;

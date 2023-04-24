@@ -1,0 +1,62 @@
+.verify_layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment_infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.verify_inner {
+  width: 40vw;
+  height: 40vh;
+  border: 1px solid #d3d3d3;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.transId {
+  font-size: 13px;
+}
+
+.verify_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.verify_btns button {
+  border: none;
+  outline: none;
+  padding: 0.2rem 0.3rem;
+  border-radius: 5px;
+  font-family: "Vazir";
+  cursor: pointer;
+}
+
+@media (max-width: 668px) {
+  .verify_inner {
+    width: 80vw;
+    height: 50vh;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 669px) and (max-width: 990px) {
+  .verify_inner {
+    width: 60vw;
+    height: 40vh;
+  }
+}

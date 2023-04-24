@@ -1,0 +1,21 @@
+.new_address_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.new_address_form input,
+.new_address_form textarea,
+.new_address_form select {
+  width: 90%;
+}
+
+@media screen and (max-width: 668px) {
+  .new_address_form {
+    grid-template-columns: 1fr;
+  }
+  .new_address_form input {
+    width: 100%;
+  }
+}

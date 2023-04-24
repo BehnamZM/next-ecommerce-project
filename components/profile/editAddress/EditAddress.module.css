@@ -1,0 +1,31 @@
+.address_form_layout {
+  margin-top: 4rem;
+}
+.address_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.address_form input,
+.address_form textarea,
+.address_form select {
+  width: 90%;
+}
+
+.control_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 668px) {
+  .address_form {
+    grid-template-columns: 1fr;
+  }
+  .address_form input,
+  .address_form textarea {
+    width: 100%;
+  }
+}

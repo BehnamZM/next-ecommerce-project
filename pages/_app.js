@@ -9,6 +9,9 @@ import Header from "../components/layout/header/Header";
 import "@/styles/globals.css";
 import axios from "axios";
 import { AuthProvider } from "@/context/AuthContext";
+import { SWRConfig } from "swr";
+import { Provider } from "react-redux";
+import store from "@/redux/Store";
 
 // const cacheRTL = createCache({
 //   key: "muirtl",
@@ -21,9 +24,17 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <AuthProvider>
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
+        <SWRConfig
+          value={{
+            fetcher: (url) => axios.get(url).then((res) => res.data),
+          }}
+        >
+          <Provider store={store}>
+            <Header />
+            <Component {...pageProps} />
+            <Footer />
+          </Provider>
+        </SWRConfig>
       </AuthProvider>
     </>
   );

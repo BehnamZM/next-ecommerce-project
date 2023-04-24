@@ -1,5 +1,4 @@
 import Button from "../ui/button/Button";
-import Input from "../ui/input/Input";
 import styles from "./Contact.module.css";
 import { BiDish } from "react-icons/bi";
 import { useState } from "react";
@@ -7,6 +6,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import dynamic from "next/dynamic";
 import CircleHeader from "../ui/circleHeader/CircleHeader";
+import LoadingButton from "../ui/loadingButton/LoadingButton";
 
 const Map = dynamic(() => import("@/components/contact/Map"), { ssr: false });
 
@@ -60,35 +60,36 @@ const Contact = () => {
         <div className="container">
           <div className={styles.contact_inner}>
             <form className={styles.contact_form} onSubmit={submitFormHandler}>
-              <Input
+              <input
+                className="styled_input"
                 type="text"
                 placeholder="نام شما"
-                tagName="input"
-                setValue={setName}
+                onChange={(e) => setName(e.target.value)}
                 value={name}
               />
-              <Input
+              <input
+                className="styled_input"
                 type="email"
                 placeholder="ایمیل شما"
-                tagName="input"
-                setValue={setEmail}
+                onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />
-              <Input
+              <input
+                className="styled_input"
                 type="text"
                 placeholder="موضوع پیام"
-                tagName="input"
-                setValue={setSubject}
+                onChange={(e) => setSubject(e.target.value)}
                 value={subject}
               />
-              <Input
+              <textarea
+                className="styled_input"
                 placeholder="پیام شما"
-                tagName="texterea"
-                setValue={setText}
+                onChange={(e) => setText(e.target.value)}
                 value={text}
               />
               <Button bgColor="red" type="submit">
                 ارسال پیام
+                {loading && <LoadingButton />}
               </Button>
             </form>
             <Map />
